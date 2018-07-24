@@ -5,19 +5,18 @@
 
 -- --------------------------------------------------------
 
-CREATE TABLE `user` ( `id` BIGINT NOT NULL AUTO_INCREMENT ,  `email` VARCHAR(50) NOT NULL ,  `password` VARCHAR(50) NOT NULL ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;
+CREATE TABLE `user` ( 
+`id` BIGINT NOT NULL AUTO_INCREMENT ,  
+`email` VARCHAR(100) NOT NULL ,  
+`password` VARCHAR(225) NOT NULL ,    PRIMARY KEY  (`id`) ,
+`created_date` datetime NULL ,
+`last_login_date` datetime NULL
+) ENGINE = InnoDB;
 
 --
 -- Indexes for table `user`
 --
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`);
-  
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+ALTER TABLE `user`   ADD UNIQUE KEY `email` (`email`);
+
 
 COMMIT;
