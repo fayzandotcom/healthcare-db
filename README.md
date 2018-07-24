@@ -1,3 +1,9 @@
+# Healthcare System
+
+Healthcare system is designed to provide details of the doctors. Users of the system can search doctors through keyword and location.
+
+System will search and fetch details of doctors from BetterDoctor API (https://developer.betterdoctor.com/documentation15)
+
 # Healthcare Database
 
 MySQL database migrations for healthcare-api project (https://github.com/fayzandotcom/healthcare-api)
